@@ -1,0 +1,358 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D4F54BBA-EE5C-4102-BD15-4A1D70F883B1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>JonJan_Poultry_Supply.My.MyApplication</StartupObject>
+    <RootNamespace>JonJan_Poultry_Supply</RootNamespace>
+    <AssemblyName>JonJan Poultry Supply</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>JonJan Poultry Supply.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>JonJan Poultry Supply.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>darklogo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Otp.NET, Version=1.2.2.0, Culture=neutral, PublicKeyToken=38a48df817e173a6, processorArchitecture=MSIL">
+      <HintPath>..\packages\Otp.NET.1.2.2\lib\net45\Otp.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmAddAccount.Designer.vb">
+      <DependentUpon>frmAddAccount.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddAccount.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddDate.Designer.vb">
+      <DependentUpon>frmAddDate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddDate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddProduct.Designer.vb">
+      <DependentUpon>frmAddProduct.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddProduct.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddSupplier.Designer.vb">
+      <DependentUpon>frmAddSupplier.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddSupplier.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEdit1.Designer.vb">
+      <DependentUpon>frmEdit1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEdit1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditAccount.Designer.vb">
+      <DependentUpon>frmEditAccount.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditAccount.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHome.Designer.vb">
+      <DependentUpon>frmHome.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmHome.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLoading.Designer.vb">
+      <DependentUpon>frmLoading.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLoading.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogIn.Designer.vb">
+      <DependentUpon>frmLogIn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogIn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.vb">
+      <DependentUpon>frmMain.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManageInventory.Designer.vb">
+      <DependentUpon>frmManageInventory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmManageInventory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManageProducts.Designer.vb">
+      <DependentUpon>frmManageProducts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmManageProducts.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSalesInfo.Designer.vb">
+      <DependentUpon>frmSalesInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSalesInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSettings.Designer.vb">
+      <DependentUpon>frmSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSettingsClient.Designer.vb">
+      <DependentUpon>frmSettingsClient.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSettingsClient.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSuppliersContact.Designer.vb">
+      <DependentUpon>frmSuppliersContact.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSuppliersContact.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmValidation.Designer.vb">
+      <DependentUpon>frmValidation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmValidation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmView.Designer.vb">
+      <DependentUpon>frmView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmViewInformation.Designer.vb">
+      <DependentUpon>frmViewInformation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmViewInformation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmAddAccount.resx">
+      <DependentUpon>frmAddAccount.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddDate.resx">
+      <DependentUpon>frmAddDate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddProduct.resx">
+      <DependentUpon>frmAddProduct.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddSupplier.resx">
+      <DependentUpon>frmAddSupplier.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEdit1.resx">
+      <DependentUpon>frmEdit1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditAccount.resx">
+      <DependentUpon>frmEditAccount.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHome.resx">
+      <DependentUpon>frmHome.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLoading.resx">
+      <DependentUpon>frmLoading.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogIn.resx">
+      <DependentUpon>frmLogIn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManageInventory.resx">
+      <DependentUpon>frmManageInventory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManageProducts.resx">
+      <DependentUpon>frmManageProducts.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSalesInfo.resx">
+      <DependentUpon>frmSalesInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSettings.resx">
+      <DependentUpon>frmSettings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSettingsClient.resx">
+      <DependentUpon>frmSettingsClient.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSuppliersContact.resx">
+      <DependentUpon>frmSuppliersContact.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmValidation.resx">
+      <DependentUpon>frmValidation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmView.resx">
+      <DependentUpon>frmView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmViewInformation.resx">
+      <DependentUpon>frmViewInformation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\img\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\img\bg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\img\darklogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\img\darkmenu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\img\menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\img\Jonjan Login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\img\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\img\padlock3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\technology-connection-digital-data-white-background_32996-546.png" />
+    <None Include="Resources\12955941.jpg" />
+    <None Include="Resources\12.png" />
+    <None Include="Resources\1295594.jpg" />
+    <None Include="Resources\dQUZ5w.jpg" />
+    <None Include="Resources\JonJan Poultry Supply4.png" />
+    <None Include="Resources\logout.png" />
+    <None Include="Resources\rotation-lock.png" />
+    <None Include="Resources\home %282%29.png" />
+    <None Include="Resources\home.png" />
+    <None Include="Resources\JonJan Poultry Supply3.png" />
+    <None Include="Resources\JonJan Poultry Supply2.png" />
+    <None Include="Resources\JonJan Poultry Supply1.png" />
+    <None Include="Resources\logo blue1.png" />
+    <None Include="Resources\logo blue.png" />
+    <None Include="Resources\JonJan Poultry Supply.png" />
+    <None Include="Resources\Untitled design %281%292.png" />
+    <None Include="Resources\Untitled design %281%291.png" />
+    <None Include="Resources\Untitled design %281%29.png" />
+    <None Include="Resources\Copy of Minimalist Tiger Head Illustration Soccer Team Circle Logo %281%291.png" />
+    <None Include="Resources\Copy of Minimalist Tiger Head Illustration Soccer Team Circle Logo %281%29.png" />
+    <None Include="Resources\32.png" />
+    <None Include="Resources\sales1.png" />
+    <None Include="Resources\sales.png" />
+    <None Include="Resources\out-of-stock.png" />
+    <None Include="Resources\boxes.png" />
+    <None Include="bin\img\monitor.png" />
+    <None Include="bin\img\monitor %281%29.png" />
+    <None Include="bin\img\monitor %282%29.png" />
+    <None Include="bin\img\only-today.png" />
+    <None Include="bin\img\inventory.png" />
+    <None Include="bin\img\setting-lines.png" />
+    <None Include="bin\img\log-file-format.png" />
+    <None Include="bin\img\contact.png" />
+    <None Include="bin\img\boxes.png" />
+    <None Include="bin\img\edit.png" />
+    <Content Include="darklogo.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
